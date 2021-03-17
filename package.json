@@ -2,7 +2,9 @@
   "name": "gatsby-digital-garden",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "lerna": "lerna",
+    "test": "jest",
+    "prepublish": "lerna run prepublish"
   },
   "author": "Julian Elve<julian@elve.london>",
   "license": "MIT",
@@ -11,9 +13,13 @@
     "@types/node": "^14.0.1",
     "jest": "^26.0.1",
     "jest-cli": "^26.0.1",
+    "lerna": "^4.0.0",
     "prettier": "^2.0.5",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.2"
   },
-  "workspaces": ["example", "packages/gatsby-theme-garden"]
+  "workspaces": [
+    "example",
+    "packages/gatsby-theme-garden"
+  ]
 }
