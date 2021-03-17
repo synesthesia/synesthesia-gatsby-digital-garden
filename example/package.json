@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "author": "Julian Elve<julian@elve.london>",
   "dependencies": {
+    "@synesthesia/gatsby-theme-garden": "0.1.58",
     "gatsby": "^2.21.22",
-    "@synesthesia/gatsby-theme-garden": "*",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   },
