@@ -1,6 +1,6 @@
 {
   "name": "@synesthesia/gatsby-theme-garden",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Gatsby theme to create a digital garden",
   "main": "index.js",
   "scripts": {
