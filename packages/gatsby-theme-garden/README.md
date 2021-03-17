@@ -2,7 +2,7 @@
 
 A Gatsby theme for publishing a digital garden forked from [mathieudutour/gatsby-digital-garden](https://github.com/mathieudutour/gatsby-digital-garden).
 
-Please note this fork is for personal experimentation, use at your own risk and please do not have any expectation of support.
+Please note this fork is for personal experimentation, use at your own risk and please do not have any expectation of support. 
 
 ## Installation
 

@@ -1,0 +1,8 @@
+43 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+44 error Error: Command failed with exit code 128: git tag example@1.0.0 -m example@1.0.0
+44 error fatal: tag 'example@1.0.0' already exists
+44 error     at makeError (/home/julian/source/syn/syn-gatsby-digital-garden/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:59:11)
+44 error     at handlePromise (/home/julian/source/syn/syn-gatsby-digital-garden/node_modules/@lerna/child-process/node_modules/execa/index.js:114:26)
+44 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+44 error     at async Promise.all (index 0)
+44 error     at async Promise.all (index 0)
