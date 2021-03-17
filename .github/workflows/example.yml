@@ -14,16 +14,12 @@ jobs:
       - uses: actions/setup-node@v1
 
       - name: Install example
-        run: npm install
+        run: yarn install
         working-directory: example
       - name: Build example
-        run: npm run build -- --prefix-paths
+        run: yarn build -- --prefix-paths
         working-directory: example
-        env:
-          ROAM_URL: ${{ secrets.ROAM_URL }}
-          ROAM_EMAIL: ${{ secrets.ROAM_EMAIL }}
-          ROAM_PASSWORD: ${{ secrets.ROAM_PASSWORD }}
-
+        
       - name: Deploy to the gh-pages branch
         if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
