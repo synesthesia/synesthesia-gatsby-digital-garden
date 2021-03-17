@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-example-using-roamresearch",
+  "name": "example",
   "private": true,
-  "description": "Gatsby example site using the Roam Research source plugin",
+  "description": "Gatsby example site",
   "version": "1.0.0",
-  "author": "Mathieu Dutour <mathieu@dutour.me>",
+  "author": "Julian Elve<julian@elve.london>",
   "dependencies": {
     "gatsby": "^2.21.22",
-    "gatsby-theme-garden": "^0.1.54",
+    "@synesthesia/gatsby-theme-garden": "*",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   },

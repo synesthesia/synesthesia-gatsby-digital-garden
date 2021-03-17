@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-garden",
+  "name": "@synesthesia/gatsby-theme-garden",
   "version": "0.1.58",
   "description": "Gatsby theme to create a digital garden",
   "main": "index.js",
@@ -15,9 +15,9 @@
     "notes",
     "roam-research"
   ],
-  "author": "Mathieu Dutour <mathieu@dutour.me>",
+  "author": "Julian Elve<julian@elve.london>",
   "repository": {
-    "url": "https://github.com/mathieudutour/gatsby-digital-garden",
+    "url": "https://github.com/synesthesia/synesthesia-gatsby-digital-garden",
     "directory": "packages/gatsby-theme-garden"
   },
   "license": "MIT",

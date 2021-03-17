@@ -4,7 +4,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "Mathieu Dutour <mathieu@dutour.me>",
+  "author": "Julian Elve<julian@elve.london>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.2.2",
@@ -14,5 +14,6 @@
     "prettier": "^2.0.5",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.2"
-  }
+  },
+  "workspaces": ["example", "packages/gatsby-theme-garden"]
 }
