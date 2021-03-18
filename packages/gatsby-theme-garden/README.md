@@ -52,18 +52,24 @@ Please note this fork is for personal experimentation, use at your own risk and 
 
 2. [Shadow](https://www.gatsbyjs.org/docs/themes/shadowing/) the component with the custom component created in step 1.
 
-3. All the MDX components that are used within `gatsby-theme-garden` can be shadowed by placing the custom components under the following path `./src/gatsby-theme-garden/components/mdx-components/index.js`
+3. All the MDX components that are used within `@synesthesia/gatsby-theme-garden` can be shadowed by placing the custom components under the following path `./src/@synesthesia/gatsby-theme-garden/components/mdx-components/index.js`
 
 #### Example: Injecting a custom `CodeBlock` component to support Syntax Highlighting
 
 1. Create a custom `CodeBlock` component as mentioned in the [MDX Guides](https://mdxjs.com/guides/syntax-highlighting#build-a-codeblock-component)
 
-2. Create a file named `./src/gatsby-theme-garden/components/mdx-components/index.js` with the following content.
+2. Create a file named `./src/@gatsby-theme-garden/components/mdx-components/index.js` with the following content.
 
    ```js
    // the components provided by the theme
-   export { AnchorTag as a } from "gatsby-theme-garden/src/components/mdx-components/anchor-tag";
+   export { AnchorTag as a } from "@gatsby-theme-garden/src/components/mdx-components/anchor-tag";
 
    // your own component to inject into mdx
    export code from "./your-component"; // any code block will use this component
    ```
+### Embedding 3rd party content in MDX pages
+
+This theme includes `gatsby-plugin-mdx-embed` so you can embed third-party content from a range of sources.
+
+Please see the [mdx-embed documentation](https://www.mdx-embed.com/?path=/story/introduction--page).
+
