@@ -51,7 +51,7 @@ module.exports = (options) => {
       {
         resolve: `gatsby-plugin-compile-es6-packages`,
         options: {
-          modules: [`gatsby-theme-garden`],
+          modules: [`@synesthesia/gatsby-theme-garden`],
         },
       },
     ].filter(Boolean),
