@@ -92,8 +92,8 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
     const svg = d3.select("#d3-container");
     const g = svg.select("g");
 
-    const zoomActions = () => {
-      const scale = d3.event.transform;
+    const zoomActions = (event) => {
+      const scale = event.transform;
       setZoom(scale.k);
       g.attr("transform", scale);
     };
