@@ -43,7 +43,7 @@ const MemoContent = memo(Content);
 
 const NotesLayout = ({ location, slug, data }) => {
   const isBrowser = typeof window !== "undefined"
-  const windowWidth = isBrowser ? useWindowWidth() : 600;
+  const windowWidth = isBrowser ? useWindowWidth() : 801;
 
   const [state, scrollContainer] = useStackedPagesProvider({
     firstPage: { slug: dataToSlug(data), data },
