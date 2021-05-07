@@ -1,4 +1,5 @@
-import React, { memo } from "react";
+import React, {Fragment,  memo } from "react";
+import { Helmet } from "react-helmet"
 import { useWindowWidth } from "@react-hook/window-size";
 import {
   useStackedPagesProvider,
@@ -16,6 +17,10 @@ import "./custom.css";
 
 const Content = ({ windowWidth, scrollContainer, stackedPages, index }) => {
   return (
+    <Fragment>
+      <Helmet>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" />
+      </Helmet>
     <div className="layout">
       <SEO title={stackedPages[stackedPages.length - 1].data.title} />
       <Header />
@@ -37,6 +42,7 @@ const Content = ({ windowWidth, scrollContainer, stackedPages, index }) => {
         </div>
       </div>
     </div>
+    </Fragment>
   );
 };
 const MemoContent = memo(Content);

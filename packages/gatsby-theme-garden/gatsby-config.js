@@ -16,6 +16,7 @@ module.exports = (options) => {
     plugins: [
       !mdxOtherwiseConfigured && `gatsby-plugin-sharp`,
       !mdxOtherwiseConfigured && `gatsby-remark-images`,
+      ////`gatsby-remark-katex`,
       !mdxOtherwiseConfigured && {
         resolve: `gatsby-plugin-mdx`,
         options: {
@@ -35,6 +36,12 @@ module.exports = (options) => {
                 icon: false,
               },
             },
+          ],
+          remarkPlugins: [
+            require('remark-math'),
+          ],
+          rehypePlugins: [
+            require('rehype-katex'),
           ],
         },
       },
