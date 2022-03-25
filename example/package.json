@@ -5,7 +5,7 @@
   "description": "Gatsby example site",
   "author": "Julian Elve<julian@elve.london>",
   "dependencies": {
-    "@synesthesia/gatsby-theme-garden": "^0.4.0",
+    "@synesthesia/gatsby-theme-garden": "^0.5.0",
     "gatsby": "^3.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

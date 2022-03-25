@@ -96,6 +96,16 @@ exports.createResolvers = ({ createResolvers }) => {
           return private;
         },
       },
+      draft: {
+        type: `Boolean`,
+        resolve(source, args, context, info) {
+          const { draft } = source;
+          if (draft == null) {
+            return false;
+          }
+          return draft;
+        },
+      },
       aliases: {
         type: `[String!]`,
         resolve(source, args, context, info) {
@@ -106,6 +116,36 @@ exports.createResolvers = ({ createResolvers }) => {
           return aliases;
         },
       },
+      status: {
+        type: `Int!`,
+        resolve(source, args, context, info) {
+          const { status } = source;
+          if (status == null) {
+            return 1;
+          }
+          return status;
+        },
+      },
+      confidence: {
+        type: `Int!`,
+        resolve(source, args, context, info) {
+          const { confidence } = source;
+          if (confidence == null) {
+            return 1;
+          }
+          return confidence;
+        },
+      },
+      effort: {
+        type: `Int!`,
+        resolve(source, args, context, info) {
+          const { effort } = source;
+          if (effort == null) {
+            return 1;
+          }
+          return effort;
+        },
+      }
     },
   };
   createResolvers(resolvers);
@@ -161,7 +201,10 @@ exports.createPages = async ({ graphql, actions }, options) => {
 
     const localFiles = result.data.allFile.nodes
       .filter((node) => shouldHandleFile(node, options))
-      .filter((x) => x.childMdx.frontmatter.private !== true);
+      .filter((x) =>
+        x.childMdx.frontmatter.private !== true &&
+        x.childMdx.frontmatter.draft !== true
+      );
 
     localFiles.forEach((node) => {
       createPage({
