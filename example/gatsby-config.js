@@ -8,7 +8,7 @@ module.exports = {
   pathPrefix: `/synesthesia-gatsby-digital-garden`,
   siteMetadata: {
     title: `Digital Garden`,
-    description: `Example of using Roam Research as a data source for a Gatsby site`,
+    description: `Example of using Foam notes as a data source for a Gatsby site`,
   },
   plugins: [
     {
