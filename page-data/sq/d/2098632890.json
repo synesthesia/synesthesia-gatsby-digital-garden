@@ -1,1 +1,1 @@
-{"data":{"allFile":{"nodes":[{"id":"8100d7aa-375f-5000-a6f7-cff62ca0d515","fields":{"title":"Markdown","slug":"/markdown"},"childMdx":{"outboundReferences":[]}}]}}}
+{"data":{"allFile":{"nodes":[{"id":"23a3b1d1-1ca4-553d-9d1b-cef16087f856","fields":{"title":"Digital Garden","slug":"/digital-garden"},"childMdx":{"outboundReferences":[]}},{"id":"8100d7aa-375f-5000-a6f7-cff62ca0d515","fields":{"title":"Markdown","slug":"/markdown"},"childMdx":{"outboundReferences":[{"parent":{"id":"23a3b1d1-1ca4-553d-9d1b-cef16087f856"}}]}}]}}}
