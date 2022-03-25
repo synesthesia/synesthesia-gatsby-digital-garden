@@ -136,6 +136,9 @@ exports.createPages = async ({ graphql, actions }, options) => {
               childMdx {
                 frontmatter {
                   private
+                  status
+                  effort
+                  confidence
                 }
               }
             }
