@@ -6,9 +6,14 @@ import ReferencesBlock from "./references-block";
 import { LinkToStacked } from "react-stacked-pages-hook";
 
 const Note = (data) => {
+
   const AnchorTag = (props) => (
     <components.a {...props} references={data.outboundReferences} />
   );
+
+  const Meta = (props) => {
+    <components.m frontmatter={data.frontmatter} {...props} />
+  }
 
   return (
     <React.Fragment>
@@ -20,7 +25,7 @@ const Note = (data) => {
           </LinkToStacked>
         </div>
       ) : null}
-      <MDXProvider components={{ ...components, a: AnchorTag }}>
+      <MDXProvider components={{ ...components, a:AnchorTag, m:Meta }}>
         <MDXRenderer>{data.mdx}</MDXRenderer>
       </MDXProvider>
       <ReferencesBlock references={data.inboundReferences} />
