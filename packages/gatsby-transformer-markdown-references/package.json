@@ -32,6 +32,6 @@
   "dependencies": {},
   "devDependencies": {
     "@types/react-dom": "^16.9.8",
-    "gatsby": "^2.21.26"
+    "gatsby": "^5.5.0"
   }
 }
